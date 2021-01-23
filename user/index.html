@@ -13,10 +13,41 @@
     <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
     <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
     <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+    <style>
+        
+        .footer {
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+        .frow {
+            font-size: 16px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 100%;
+            background: #66a8ff;
+            color: white;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            height: 100%;
+            margin-bottom: -100px;
+        }
+        .col {
+            width: 25%;
+        }
+
+        .col.wide {
+            width: 50%;
+        }
+
+        .col a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body class="theme-light" data-highlight="blue2">
-
     <div id="preloader">
         <div class="spinner-border color-highlight" role="status"></div>
     </div>
@@ -324,6 +355,7 @@
                 <div class="card-overlay bg-black opacity-80"></div>
             </div>-->
 
+            
             <div class="content mb-2">
                 <h5 class="float-left font-16 font-500">THE LITTLE WE HAVE DONE…</h5>
                 <a class="float-right font-12 color-highlight mt-n1" href="#">(Testimonials of the clients and what difference we have created in their lives.)</a>
@@ -361,24 +393,33 @@
             </div>
             <br>
 
-            <div class="card card-style bg-gradient-blue2 text-white">
-                <div class="content pb-3 pt-3">
-                    <h3 class="mb-1 color-white font-700">SUBSCRIBE TO OUR JOURNAL</h3>
-                    <p class="color-white opacity-80">
-                        Stay in touch with us
-                    </p>
-                    <div class="input-style input-style-1 input-required text-white">
-                        <span >Email</span>
-                        <input type="email" placeholder="Email" class="text-white ">
-                        <a href="#" class="btn btn-s mb-3 rounded-s text-uppercase font-900 shadow-s border-red2-dark  bg-red2-light"><span class="badge badge-light">Submit</span></a><br>
-                    </div>
-                </div>            
-            </div>
-
-
            
 
-          <!--  <div class="card card-style text-center">
+            <div class="card card-style bg-gradient-blue2 text-white text-center">
+                <div class="row">
+                    <div class="col ">
+                <div class="content pb-3 pt-3">
+                    <a href="#" data-menu="menu-forgot">
+                    <h3 class="mb-1 color-white font-700">Click here to Subscribe to our Journal</h3>
+                    <p class="color-white opacity-80">
+                        Stay in touch with us
+                    </p></a>
+                </div>  
+            </div>
+        
+            <div class="col ">
+                   <div class="content pb-3 pt-3">
+                       <a href="#" data-menu="menu-share-thumbs">
+                       <h3 class="mb-1 color-white font-700">Click here to Find us on other platforms</h3>
+                       <p class="color-white opacity-80">
+                           Stay in touch with us
+                       </p></a>
+                   </div>  
+               </div>
+            </div>
+        </div>
+
+        <!--  <div class="card card-style text-center">
                 <div class="content ">
                     <h5 class="float-left font-16 font-600 ">Connect with Us</h5>
                     <div class="clearfix"></div>
@@ -441,18 +482,37 @@
             </div>
             -->
 
-            <div class="card card-style ">
-                <div class="content mb-1 ">
-                    <h3 class="d-flex justify-content-center">Connect with us</h3>
-                    <br>
-                <div class="d-flex justify-content-center  mb-3">
-                    <a href="#" class="mr-3 mb-3 icon icon-xl rounded-m bg-facebook "><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="mr-3 mb-3 icon icon-xl rounded-m bg-linkedin"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="mr-3 mb-3 icon icon-xl rounded-m bg-instagram"><i class="fab fa-instagram"></i></a>
-                </div>
+
+             <!-- footer-->
+
+            <div  class="footer-bar-2 footer   bg-gradient-blue2">
+                <div class="frow">
+                    <div class="col text-center">
+                        <h3>About Us</h3>
+                        <a href="#" class="text-white">Who Are We?</a><br>
+                        <a href="#" class="text-white">Our Story</a><br>
+                        <a href="#" class="text-white">Blogs</a>
+                    </div>
+                    <div class="col text-center">
+                        <h3>Sell With Us</h3>
+                        <a href="#" class="text-white">Stories Worth Telling</a>
+                    </div>
+                    <div class="col wide text-center">
+                        <h3>Contact Us</h3>
+                        <div class="row text-white">
+                            <div class="col">
+                            <a>Send Enquiries</a><br>
+                            <a>FAQ</a>
+                            </div>
+                            <div class="col">
+                                <a>+91 9816393258</a><br>
+                                <a>contactcfl@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
+        </div>
             <!-- end of page content-->
 
 
@@ -490,6 +550,72 @@
 
 
         </div>
+
+         <!--------------->
+    <!--------------->
+    <!--Menu Forgot-->
+    <!--------------->
+    <!--------------->
+    <div id="menu-forgot" class="menu menu-box-modal rounded-m"
+    data-menu-height="240" 
+    data-menu-width="330">
+   <div class="mr-3 ml-3 mt-3">
+       <h2 class="font-700 mb-0 pt-1">Subscription to our Journal</h2>
+       <p class="font-11 mb-1">
+           To get more info about offers and stuff
+       </p>
+       <div class="input-style has-icon input-style-1 input-required mb-4">
+           <i class="input-icon fa fa-at"></i>
+           <span>Email</span>
+           <em>(required)</em>
+           <input type="email" placeholder="Email">
+       </div>   
+       <a href="#" class="btn btn-full btn-m shadow-l rounded-s bg-highlight text-uppercase font-900 top-20">Confirm</a>
+   </div>
+</div>  
+
+
+<!--------------------->
+    <!--------------------->
+    <!--Menu Share Thumbs-->
+    <!--------------------->
+    <!--------------------->
+    <div id="menu-share-thumbs" 
+         class="menu menu-box-modal menu-box-detached rounded-m" 
+         data-menu-height="420" 
+         data-menu-width="320">
+        <h1 class="text-center font-700 mt-3 pt-2">Find us on</h1>
+        <p class="boxed-text-xl under-heading mb-4">
+            this this this <br>
+
+        </p>
+        <div class="divider divider-margins"></div>
+        
+        <div class="row text-center mr-3 ml-3 mb-0">
+            <div class="col-4 mb-n2">
+                <a href="#" class="icon icon-l bg-facebook rounded-s shadow-l"><i class="fab fa-facebook-f font-22"></i><br></a>
+                <p class="font-11 opacity-70">Facebook</p>
+            </div>
+            <div class="col-4 mb-n2">
+                <a href="#" class="icon icon-l bg-twitter rounded-s shadow-l"><i class="fab fa-twitter font-22"></i><br></a>
+                <p class="font-11 opacity-70">Twitter</p>
+            </div>
+            <div class="col-4 mb-n2">
+                <a href="#" class="icon icon-l bg-linkedin rounded-s shadow-l"><i class="fab fa-linkedin-in font-22"></i><br></a>
+                <p class="font-11 opacity-70">LinkedIn</p>
+            </div>
+        
+            <div class="col-4 mb-n2  center  ">
+                <a href="#" class="close-menu icon icon-l bg-red2-dark rounded-s shadow-l"><i class="fa fa-arrow-down font-22"></i><br></a>
+                <p class="font-11 opacity-70">Close</p>
+            </div>
+        </div>
+
+        <div class="divider divider-margins mt-n1 mb-3"></div>
+        <p class="text-center font-10 mb-0">Copyright <span class="copyright-year"></span> - Enabled. All rights reserved.</p>
+    </div>
+
+
 
 
         <script type="text/javascript" src="scripts/jquery.js"></script>
